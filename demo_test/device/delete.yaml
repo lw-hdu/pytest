@@ -1,9 +1,0 @@
--
- name: 删除设备
- request:
-  methond: delete
-  url: http://10.0.10.131/interface/device/$id
-  data: None
- validate: 
-  code: 0
-  msg: 删除设备成功

@@ -3,7 +3,7 @@ Descripttion:
 version: 
 Author: Liuwen
 Date: 2021-12-07 10:05:51
-LastEditTime: 2021-12-07 13:52:07
+LastEditTime: 2021-12-07 15:04:31
 '''
 
 '''
@@ -13,7 +13,7 @@ import json
 from string import Template
 from common.Readyaml import get_yaml_file
 
-file = get_yaml_file('common\\test.yaml')
+file = get_yaml_file('demo_test\\test.yaml')
 
 temp = Template(json.dumps(file))
 d={'name':'liuwen','passwd':'123456789'}
