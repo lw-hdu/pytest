@@ -3,7 +3,7 @@ Descripttion:
 version: 
 Author: Liuwen
 Date: 2021-12-01 10:53:32
-LastEditTime: 2021-12-06 15:47:43
+LastEditTime: 2021-12-07 14:14:27
 '''
 '''
 Descripttion: 
@@ -50,6 +50,7 @@ class TestCommand:
         TestCommand.command_id=res.json()['data']['content'][0]['id']
         assert caseinfo['validate']['code'] == res.json()['code']
         assert caseinfo['validate']['msg'] == res.json()['msg']
+        TestCommand.log.info(f'执行的测试用例名称：{name}')
         TestCommand.log.info(f'查询命令响应结果:{res.json()}')
 
     
