@@ -1,0 +1,8 @@
+-
+ name: 查询当前用户的正常和故障电站个数
+ request:
+  methond: get
+  url: http://10.0.10.131/interface/power/findPowerCountGroupStatus
+  data: None
+ validate: 
+  code: 0

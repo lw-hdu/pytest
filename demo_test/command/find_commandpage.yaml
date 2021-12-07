@@ -1,0 +1,9 @@
+-
+ name: 分页查询命令
+ request:
+  methond: get
+  url: http://10.0.10.131/interface/command/findCommandPage/1/10
+  data: None
+ validate: 
+  code: 0
+  msg: 分页查询成功

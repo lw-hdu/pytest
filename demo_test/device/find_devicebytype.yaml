@@ -1,0 +1,13 @@
+-
+ name: 查询电站下设备信息
+ request:
+  methond: get
+  url: http://10.0.10.131/interface/device/findDevicePageByPowerId/1/9
+  data: 
+   deviceName: 
+   deviceCode: 
+   deviceType: 
+   powerId: 170
+ validate: 
+  code: 0
+  msg: 查询成功

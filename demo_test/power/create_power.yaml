@@ -1,0 +1,36 @@
+-
+ name: 新增电站
+ request:
+  methond: post
+  url: http://10.0.10.131/interface/power/formdata
+  data: 
+   id: 
+   powerName: pytest自动化测试专用电站
+   powerPrice: 0.8
+   region: 610000,610100,610112
+   address: 经济开发区尚稷路8888号
+   longitude: 12.33
+   latitude: 232.2
+   stationVolume: 1000
+   voltageLevel: 0
+   joinWay: 2
+   inverterCount: null
+   contact: pytest
+   contactNo: 13300000000
+   gcc: 
+   startTime: null
+   endTime: null
+   description: 
+   userGroup: 
+   operationGroup: 
+   groupName: 
+   operationGroupName: 
+   regionNames: 陕西省 / 西安市 / 未央区
+   reports: 
+   regionList: 610000,610100,610112
+   times: 
+   file: (binary)
+   productionTime: 2021-12-31 00:00:00
+   powerType: 0
+ validate: 
+  code: 0

@@ -1,0 +1,15 @@
+# -
+#  name: 查询用户信息
+#  request:
+#   methond: get
+#   url: http://10.0.10.131/userManage/user/findById/1
+#   data: None
+#  validate: None
+-
+ name: 根据id查询电站
+ request:
+  methond: get
+  url: http://10.0.10.131/interface/power/findById/
+  data: None
+ validate: 
+  code: 0

@@ -1,0 +1,29 @@
+-
+ name: MQTT采集设备添加
+ request:
+  methond: post
+  url: http://10.0.10.131/interface/device
+  data: 
+   MPPTAccessRoadArray: []
+   PVAccessRoadArray: []
+   choseItem: ""
+   choseItemArray: []
+   collect: "1"
+   collectDeviceId: null
+   collectType: ""
+   commands: []
+   deviceCode: ""
+   deviceName: "MQTT采集器test20211201"
+   deviceType: "collect"
+   id: ""
+   meterAddress: ""
+   mpptType: ""
+   parentId: null
+   powerId: "170"
+   protocolType: "MQTT"
+   showStringInfoFlag: false
+   slave: ""
+   strs: {}
+ validate: 
+  code: 0
+  msg: 添加设备成功

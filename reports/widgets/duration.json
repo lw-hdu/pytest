@@ -1,0 +1,131 @@
+[ {
+  "uid" : "2257dbc76373d4d8",
+  "name" : "删除命令",
+  "time" : {
+    "start" : 1638853678026,
+    "stop" : 1638853678071,
+    "duration" : 45
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc2a93c9775efa15",
+  "name" : "test_find_powerbyid[caseinfo0]",
+  "time" : {
+    "start" : 1638853679901,
+    "stop" : 1638853679937,
+    "duration" : 36
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "58d9b0de5b41c07d",
+  "name" : "创建设备",
+  "time" : {
+    "start" : 1638853678242,
+    "stop" : 1638853678284,
+    "duration" : 42
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2bd809ea2463378c",
+  "name" : "登录测试",
+  "time" : {
+    "start" : 1638853678950,
+    "stop" : 1638853679119,
+    "duration" : 169
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9eb5d0068436f0e1",
+  "name" : "查询设备",
+  "time" : {
+    "start" : 1638853678455,
+    "stop" : 1638853678496,
+    "duration" : 41
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ecf8fc8beefac05",
+  "name" : "test_find_allpower[caseinfo0]",
+  "time" : {
+    "start" : 1638853679683,
+    "stop" : 1638853679723,
+    "duration" : 40
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "be38124f561037ca",
+  "name" : "test_find_PowerCountGroupStatus[caseinfo0]",
+  "time" : {
+    "start" : 1638853679940,
+    "stop" : 1638853679940,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "aff2a323ac0c2842",
+  "name" : "删除设备",
+  "time" : {
+    "start" : 1638853678914,
+    "stop" : 1638853678946,
+    "duration" : 32
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ccc48f8125571ac5",
+  "name" : "登录测试",
+  "time" : {
+    "start" : 1638853679123,
+    "stop" : 1638853679282,
+    "duration" : 159
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6667246292e64a54",
+  "name" : "创建命令",
+  "time" : {
+    "start" : 1638853677565,
+    "stop" : 1638853677613,
+    "duration" : 48
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9d3537cf534e2868",
+  "name" : "删除设备",
+  "time" : {
+    "start" : 1638853678666,
+    "stop" : 1638853678719,
+    "duration" : 53
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da5a8adb06063b6c",
+  "name" : "登录测试",
+  "time" : {
+    "start" : 1638853679284,
+    "stop" : 1638853679443,
+    "duration" : 159
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5c7b1fc8f29a5d8a",
+  "name" : "查询命令",
+  "time" : {
+    "start" : 1638853677786,
+    "stop" : 1638853677848,
+    "duration" : 62
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

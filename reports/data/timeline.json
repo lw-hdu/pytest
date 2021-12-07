@@ -1,0 +1,169 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "XA342458",
+    "children" : [ {
+      "name" : "7236-MainThread",
+      "children" : [ {
+        "name" : "删除命令",
+        "uid" : "2257dbc76373d4d8",
+        "parentUid" : "82829ad0d07d10bd200ab844e672a3ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638853678026,
+          "stop" : 1638853678071,
+          "duration" : 45
+        },
+        "flaky" : false,
+        "parameters" : [ "{'name': '命令添加', 'request': {'methond': 'delete', 'url': 'http://10.0.10.131/interface/command/', 'data': 'None'}, 'validate': {'code': 0, 'msg': '删除命令成功'}}" ]
+      }, {
+        "name" : "test_find_powerbyid[caseinfo0]",
+        "uid" : "cc2a93c9775efa15",
+        "parentUid" : "82829ad0d07d10bd200ab844e672a3ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638853679901,
+          "stop" : 1638853679937,
+          "duration" : 36
+        },
+        "flaky" : false,
+        "parameters" : [ "{'name': '根据id查询电站', 'request': {'methond': 'get', 'url': 'http://10.0.10.131/interface/power/findById/', 'data': 'None'}, 'validate': {'code': 0}}" ]
+      }, {
+        "name" : "创建设备",
+        "uid" : "58d9b0de5b41c07d",
+        "parentUid" : "82829ad0d07d10bd200ab844e672a3ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638853678242,
+          "stop" : 1638853678284,
+          "duration" : 42
+        },
+        "flaky" : false,
+        "parameters" : [ "{'name': 'MQTT采集设备添加', 'request': {'methond': 'post', 'url': 'http://10.0.10.131/interface/device', 'data': {'MPPTAccessRoadArray': [], 'PVAccessRoadArray': [], 'choseItem': '', 'choseItemArray': [], 'collect': '1', 'collectDeviceId': None, 'collectType': '', 'commands': [], 'deviceCode': '', 'deviceName': 'MQTT采集器test20211201', 'deviceType': 'collect', 'id': '', 'meterAddress': '', 'mpptType': '', 'parentId': None, 'powerId': '170', 'protocolType': 'MQTT', 'showStringInfoFlag': False, 'slave': '', 'strs': {}}}, 'validate': {'code': 0, 'msg': '添加设备成功'}}" ]
+      }, {
+        "name" : "登录测试",
+        "uid" : "2bd809ea2463378c",
+        "parentUid" : "82829ad0d07d10bd200ab844e672a3ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638853678950,
+          "stop" : 1638853679119,
+          "duration" : 169
+        },
+        "flaky" : false,
+        "parameters" : [ "{'name': '正常登录', 'request': {'methond': 'post', 'url': 'http://10.0.10.131/login?username=admin&password=1qaz!QAZ', 'data': {'password': '1qaz!QAZ', 'username': 'admin'}}, 'validate': {'code': 0, 'msg': '认证成功'}}" ]
+      }, {
+        "name" : "查询设备",
+        "uid" : "9eb5d0068436f0e1",
+        "parentUid" : "82829ad0d07d10bd200ab844e672a3ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638853678455,
+          "stop" : 1638853678496,
+          "duration" : 41
+        },
+        "flaky" : false,
+        "parameters" : [ "{'name': '查询电站下设备信息', 'request': {'methond': 'get', 'url': 'http://10.0.10.131/interface/device/findDevicePageByPowerId/1/9', 'data': {'deviceName': None, 'deviceCode': None, 'deviceType': None, 'powerId': 170}}, 'validate': {'code': 0, 'msg': '查询成功'}}" ]
+      }, {
+        "name" : "test_find_allpower[caseinfo0]",
+        "uid" : "6ecf8fc8beefac05",
+        "parentUid" : "82829ad0d07d10bd200ab844e672a3ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638853679683,
+          "stop" : 1638853679723,
+          "duration" : 40
+        },
+        "flaky" : false,
+        "parameters" : [ "{'name': '查询所有电站', 'request': {'methond': 'get', 'url': 'http://10.0.10.131/interface/power/findPowerAll', 'data': 'None'}, 'validate': {'code': 0}}" ]
+      }, {
+        "name" : "test_find_PowerCountGroupStatus[caseinfo0]",
+        "uid" : "be38124f561037ca",
+        "parentUid" : "82829ad0d07d10bd200ab844e672a3ae",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1638853679940,
+          "stop" : 1638853679940,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ "{'name': '查询当前用户的正常和故障电站个数', 'request': {'methond': 'get', 'url': 'http://10.0.10.131/interface/power/findPowerCountGroupStatus', 'data': 'None'}, 'validate': {'code': 0}}" ]
+      }, {
+        "name" : "删除设备",
+        "uid" : "aff2a323ac0c2842",
+        "parentUid" : "82829ad0d07d10bd200ab844e672a3ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638853678914,
+          "stop" : 1638853678946,
+          "duration" : 32
+        },
+        "flaky" : false,
+        "parameters" : [ "{'name': '删除设备不存在', 'request': {'methond': 'delete', 'url': 'http://10.0.10.131/interface/device/$id_null', 'data': 'None'}, 'validate': {'code': 1401, 'msg': '查询不到改设备'}}" ]
+      }, {
+        "name" : "登录测试",
+        "uid" : "ccc48f8125571ac5",
+        "parentUid" : "82829ad0d07d10bd200ab844e672a3ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638853679123,
+          "stop" : 1638853679282,
+          "duration" : 159
+        },
+        "flaky" : false,
+        "parameters" : [ "{'name': '密码错误', 'request': {'methond': 'post', 'url': 'http://10.0.10.131/login?username=admin&password=1qaz!QA', 'data': {'password': '1qaz!QA', 'username': 'admin'}}, 'validate': {'code': -1, 'msg': '认证失败'}}" ]
+      }, {
+        "name" : "创建命令",
+        "uid" : "6667246292e64a54",
+        "parentUid" : "82829ad0d07d10bd200ab844e672a3ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638853677565,
+          "stop" : 1638853677613,
+          "duration" : 48
+        },
+        "flaky" : false,
+        "parameters" : [ "{'name': '命令添加', 'request': {'methond': 'post', 'url': 'http://10.0.10.131/interface/command', 'data': {'commandName': 'test', 'commandType': 3, 'handleId': 2, 'id': '', 'readData': '[{\"name\":\"temp\",\"type\":\"short\"}]', 'send': 'address=11,quantity=4'}}, 'validate': {'code': 0, 'msg': '添加命令成功'}}" ]
+      }, {
+        "name" : "删除设备",
+        "uid" : "9d3537cf534e2868",
+        "parentUid" : "82829ad0d07d10bd200ab844e672a3ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638853678666,
+          "stop" : 1638853678719,
+          "duration" : 53
+        },
+        "flaky" : false,
+        "parameters" : [ "{'name': '删除设备', 'request': {'methond': 'delete', 'url': 'http://10.0.10.131/interface/device/$id', 'data': 'None'}, 'validate': {'code': 0, 'msg': '删除设备成功'}}" ]
+      }, {
+        "name" : "登录测试",
+        "uid" : "da5a8adb06063b6c",
+        "parentUid" : "82829ad0d07d10bd200ab844e672a3ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638853679284,
+          "stop" : 1638853679443,
+          "duration" : 159
+        },
+        "flaky" : false,
+        "parameters" : [ "{'name': '用户不存在', 'request': {'methond': 'post', 'url': 'http://10.0.10.131/login?username=aaa&password=1qaz!QA', 'data': {'password': '1qaz!QA', 'username': 'aaa'}}, 'validate': {'code': -1, 'msg': '认证失败'}}" ]
+      }, {
+        "name" : "查询命令",
+        "uid" : "5c7b1fc8f29a5d8a",
+        "parentUid" : "82829ad0d07d10bd200ab844e672a3ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1638853677786,
+          "stop" : 1638853677848,
+          "duration" : 62
+        },
+        "flaky" : false,
+        "parameters" : [ "{'name': '分页查询命令', 'request': {'methond': 'get', 'url': 'http://10.0.10.131/interface/command/findCommandPage/1/10', 'data': 'None'}, 'validate': {'code': 0, 'msg': '分页查询成功'}}" ]
+      } ],
+      "uid" : "82829ad0d07d10bd200ab844e672a3ae"
+    } ],
+    "uid" : "b5e5b6ef3b2734664bd21635ea8e8a75"
+  } ]
+}

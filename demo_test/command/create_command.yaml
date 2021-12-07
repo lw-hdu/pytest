@@ -1,0 +1,15 @@
+-
+ name: 命令添加
+ request:
+  methond: post
+  url: http://10.0.10.131/interface/command
+  data: 
+   commandName: "test"
+   commandType: 3
+   handleId: 2
+   id: ""
+   readData: "[{\"name\":\"temp\",\"type\":\"short\"}]"
+   send: "address=11,quantity=4"
+ validate: 
+  code: 0
+  msg: 添加命令成功

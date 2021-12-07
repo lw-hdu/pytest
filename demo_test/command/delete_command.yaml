@@ -1,0 +1,9 @@
+-
+ name: 命令添加
+ request:
+  methond: delete
+  url: http://10.0.10.131/interface/command/
+  data: None
+ validate: 
+  code: 0
+  msg: 删除命令成功

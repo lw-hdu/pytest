@@ -1,0 +1,19 @@
+-
+ name: 删除设备
+ request:
+  methond: delete
+  url: http://10.0.10.131/interface/device/$id
+  data: None
+ validate: 
+  code: 0
+  msg: 删除设备成功
+
+-
+ name: 删除设备不存在
+ request:
+  methond: delete
+  url: http://10.0.10.131/interface/device/$id_null
+  data: None
+ validate: 
+  code: 1401
+  msg: 查询不到改设备

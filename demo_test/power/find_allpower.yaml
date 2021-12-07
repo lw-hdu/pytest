@@ -1,0 +1,15 @@
+# -
+#  name: 查询用户信息
+#  request:
+#   methond: get
+#   url: http://10.0.10.131/userManage/user/findById/1
+#   data: None
+#  validate: None
+-
+ name: 查询所有电站
+ request:
+  methond: get
+  url: http://10.0.10.131/interface/power/findPowerAll
+  data: None
+ validate: 
+  code: 0
