@@ -3,7 +3,7 @@ Descripttion:
 version: 
 Author: Liuwen
 Date: 2021-12-01 10:53:32
-LastEditTime: 2021-12-07 14:14:27
+LastEditTime: 2021-12-07 14:50:49
 '''
 '''
 Descripttion: 
@@ -35,6 +35,7 @@ class TestCommand:
         res=Request.session.request(method=methond,url=url,json=data,headers=header)
         assert caseinfo['validate']['code'] == res.json()['code']
         assert caseinfo['validate']['msg'] == res.json()['msg']
+        TestCommand.log.info(f'执行的测试用例名称：{name}')
         TestCommand.log.info(f'创建命令响应：{res.json()}')
 
     
@@ -65,5 +66,6 @@ class TestCommand:
         res=Request.session.request(method=methond,url=url,params=data,headers=header)
         assert caseinfo['validate']['code'] == res.json()['code']
         assert caseinfo['validate']['msg'] == res.json()['msg']
+        TestCommand.log.info(f'执行的测试用例名称：{name}')
         TestCommand.log.info(f'删除的命令id为：{TestCommand.command_id}')
         TestCommand.log.info(f'删除命令响应：{res.json()}')

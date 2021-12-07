@@ -3,7 +3,7 @@ Descripttion:
 version: 
 Author: Liuwen
 Date: 2021-11-29 10:07:57
-LastEditTime: 2021-12-07 13:13:16
+LastEditTime: 2021-12-07 14:52:21
 '''
 from _pytest.mark import param
 import pytest
@@ -32,6 +32,7 @@ class TestPower:
         # print(res.json())
         TestPower.power_id = res.json()['data'][-1]['id']
         assert caseinfo['validate']['code'] == res.json()['code']
+        TestPower.log.info(f'执行的测试用例名称：{name}')
         TestPower.log.info(f'查询所有电站响应：{res.json()}')
         
     @pytest.mark.parametrize('caseinfo',get_yaml_file('demo_test\\power\\find_powerbyid.yaml'))
@@ -43,6 +44,7 @@ class TestPower:
         data=caseinfo['request']['data']
         res=Request.session.request(method=methond,url=url,params=data,headers=header)
         assert caseinfo['validate']['code'] == res.json()['code']
+        TestPower.log.info(f'执行的测试用例名称：{name}')
         TestPower.log.info(f'根据电站id查询电站响应：{res.json()}')
 
     @pytest.mark.skip()
@@ -55,6 +57,7 @@ class TestPower:
         data=caseinfo['request']['data']
         res=Request.session.request(method=methond,url=url,params=data,headers=header)
         assert caseinfo['validate']['code'] == res.json()['code']
+        TestPower.log.info(f'执行的测试用例名称：{name}')
         TestPower.log.info(f'查询当前用户的正常和故障电站个数响应：{res.json()}')
         # print(res.json())
 

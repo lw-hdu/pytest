@@ -3,7 +3,7 @@ Descripttion:
 version: 
 Author: Liuwen
 Date: 2021-12-01 10:53:32
-LastEditTime: 2021-12-07 13:12:14
+LastEditTime: 2021-12-07 14:50:03
 '''
 '''
 Descripttion: 
@@ -65,6 +65,7 @@ class TestDevice:
             'id_null':999999
             }
         #将id的值传入yaml的$id字段，并通过json.loads()将str转换为dict
+        # 使用safe_substitute即使key不存在，也不会报错，原样输出
         case = json.loads(temp.safe_substitute(d))
         header={'Authorization':get_token}
         name=case['name']
