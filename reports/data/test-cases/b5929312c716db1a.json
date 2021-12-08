@@ -1,0 +1,89 @@
+{
+  "uid" : "b5929312c716db1a",
+  "name" : "删除设备",
+  "fullName" : "interface_test.test_device.TestDevice#test_del_device",
+  "historyId" : "05c84fb056a539627166203a198b7b21",
+  "time" : {
+    "start" : 1638868073411,
+    "stop" : 1638868073445,
+    "duration" : 34
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1638868073241,
+      "stop" : 1638868073410,
+      "duration" : 169
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8d2205028f2b9652",
+      "name" : "log",
+      "source" : "8d2205028f2b9652.txt",
+      "type" : "text/plain",
+      "size" : 725
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "interface_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_device"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDevice"
+  }, {
+    "name" : "host",
+    "value" : "XA342458"
+  }, {
+    "name" : "thread",
+    "value" : "12016-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "interface_test.test_device"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '删除设备不存在', 'request': {'methond': 'delete', 'url': 'http://10.0.10.131/interface/device/$id_null', 'data': 'None'}, 'validate': {'code': 1401, 'msg': '查询不到改设备'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b5929312c716db1a.json",
+  "parameterValues" : [ "{'name': '删除设备不存在', 'request': {'methond': 'delete', 'url': 'http://10.0.10.131/interface/device/$id_null', 'data': 'None'}, 'validate': {'code': 1401, 'msg': '查询不到改设备'}}" ]
+}

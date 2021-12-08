@@ -1,0 +1,89 @@
+{
+  "uid" : "a8113acc74cd2bd2",
+  "name" : "test_find_powerbyid[caseinfo0]",
+  "fullName" : "interface_test.test_power.TestPower#test_find_powerbyid",
+  "historyId" : "c20114b0893fd48d15bdb5a3122bfce8",
+  "time" : {
+    "start" : 1638868074346,
+    "stop" : 1638868074380,
+    "duration" : 34
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1638868074179,
+      "stop" : 1638868074346,
+      "duration" : 167
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "560f02936d00e222",
+      "name" : "log",
+      "source" : "560f02936d00e222.txt",
+      "type" : "text/plain",
+      "size" : 1446
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "interface_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_power"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPower"
+  }, {
+    "name" : "host",
+    "value" : "XA342458"
+  }, {
+    "name" : "thread",
+    "value" : "12016-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "interface_test.test_power"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '根据id查询电站', 'request': {'methond': 'get', 'url': 'http://10.0.10.131/interface/power/findById/', 'data': 'None'}, 'validate': {'code': 0}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a8113acc74cd2bd2.json",
+  "parameterValues" : [ "{'name': '根据id查询电站', 'request': {'methond': 'get', 'url': 'http://10.0.10.131/interface/power/findById/', 'data': 'None'}, 'validate': {'code': 0}}" ]
+}

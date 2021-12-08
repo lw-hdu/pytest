@@ -6,8 +6,8 @@
     password: "1qaz!QA"
     username: "admin"
   validate: 
-   code: -1
-   msg: 认证失败
+   - code: -1
+   - msg: 认证失败
 
 - name: 密码zhengque
   request:
