@@ -3,9 +3,8 @@ Descripttion:
 version: 
 Author: Liuwen
 Date: 2021-11-29 10:07:57
-LastEditTime: 2021-12-07 11:51:59
+LastEditTime: 2021-12-09 11:45:50
 '''
-from _pytest.mark import param
 import pytest
 from common.Request import Request
 from common.Readyaml import get_yaml_file
