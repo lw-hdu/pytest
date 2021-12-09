@@ -1,0 +1,6 @@
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:231 Starting new HTTP connection (1): 10.0.10.131:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:461 http://10.0.10.131:80 "POST /login?username=admin&password=1qaz!QAZ HTTP/1.1" 200 None
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:231 Starting new HTTP connection (1): 10.0.10.131:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:461 http://10.0.10.131:80 "POST /interface/command HTTP/1.1" 200 None
+[32mINFO    [0m command:test_command.py:31 执行的测试用例名称：命令添加
+[32mINFO    [0m command:test_command.py:32 创建命令响应：{'code': 0, 'msg': '添加命令成功', 'data': None}
