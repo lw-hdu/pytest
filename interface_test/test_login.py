@@ -8,7 +8,6 @@ LastEditTime: 2021-12-09 11:45:50
 import pytest
 from common.Request import Request
 from common.Readyaml import get_yaml_file
-import requests
 import allure
 import logging
 #从其他测试用例中引入参数id
