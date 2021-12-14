@@ -1,0 +1,4 @@
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:461 http://10.0.10.131:80 "POST /login?username=aaa&password=1qaz!QA HTTP/1.1" 200 None
+[32mINFO    [0m user_login:test_login.py:31 执行的测试用例名称：用户不存在
+[32mINFO    [0m user_login:test_login.py:32 登录请求body:{'password': '1qaz!QA', 'username': 'aaa'}
+[32mINFO    [0m user_login:test_login.py:33 登录的响应结果： {'code': -1, 'msg': '认证失败'}

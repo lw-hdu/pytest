@@ -1,0 +1,89 @@
+{
+  "uid" : "ea15b375f1c5b577",
+  "name" : "查询命令",
+  "fullName" : "interface_test.test_command.TestCommand#test_find_command",
+  "historyId" : "fd32f7776600306094298f3eed05f470",
+  "time" : {
+    "start" : 1639466570306,
+    "stop" : 1639466570364,
+    "duration" : 58
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1639466570136,
+      "stop" : 1639466570306,
+      "duration" : 170
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2f0f656853a9267c",
+      "name" : "log",
+      "source" : "2f0f656853a9267c.txt",
+      "type" : "text/plain",
+      "size" : 6355
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "interface_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_command"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCommand"
+  }, {
+    "name" : "host",
+    "value" : "XA342458"
+  }, {
+    "name" : "thread",
+    "value" : "22336-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "interface_test.test_command"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '分页查询命令', 'request': {'methond': 'get', 'url': 'http://10.0.10.131/interface/command/findCommandPage/1/10', 'data': 'None'}, 'validate': {'code': 0, 'msg': '分页查询成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ea15b375f1c5b577.json",
+  "parameterValues" : [ "{'name': '分页查询命令', 'request': {'methond': 'get', 'url': 'http://10.0.10.131/interface/command/findCommandPage/1/10', 'data': 'None'}, 'validate': {'code': 0, 'msg': '分页查询成功'}}" ]
+}

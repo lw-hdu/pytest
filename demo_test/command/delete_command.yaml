@@ -1,8 +1,8 @@
 -
- name: 命令添加
+ name: 命令删除
  request:
   methond: delete
-  url: http://10.0.10.131/interface/command/
+  url: http://10.0.10.131/interface/command/$id
   data: None
  validate: 
   code: 0

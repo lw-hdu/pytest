@@ -3,14 +3,15 @@ Descripttion:
 version: 
 Author: Liuwen
 Date: 2021-12-01 10:53:32
-LastEditTime: 2021-12-07 17:04:51
+LastEditTime: 2021-12-14 15:42:01
 '''
-from _pytest.mark import param
+import json
 import pytest
 from common.Request import Request
 from common.Readyaml import get_yaml_file
 import allure
 import logging
+from string import Template
 
 class TestCommand:
     command_id=''
@@ -51,14 +52,19 @@ class TestCommand:
     @allure.title('删除命令')
     @pytest.mark.parametrize('caseinfo',get_yaml_file('demo_test\\command\\delete_command.yaml'))
     def test_del_command(self,caseinfo,get_token):
-        name=caseinfo['name']
+        temp = Template(json.dumps(caseinfo))
+        d = {
+            'id':TestCommand.command_id
+            }
+        case = json.loads(temp.safe_substitute(d))
+        name=case['name']
         header={'Authorization':get_token}
-        methond=caseinfo['request']['methond']
-        url=caseinfo['request']['url']+str(TestCommand.command_id)
-        data=caseinfo['request']['data']
+        methond=case['request']['methond']
+        url=case['request']['url']
+        data=case['request']['data']
         res=Request.session.request(method=methond,url=url,params=data,headers=header)
-        assert caseinfo['validate']['code'] == res.json()['code']
-        assert caseinfo['validate']['msg'] == res.json()['msg']
+        assert case['validate']['code'] == res.json()['code']
+        assert case['validate']['msg'] == res.json()['msg']
         TestCommand.log.info(f'执行的测试用例名称：{name}')
         TestCommand.log.info(f'删除的命令id为：{TestCommand.command_id}')
         TestCommand.log.info(f'删除命令响应：{res.json()}')

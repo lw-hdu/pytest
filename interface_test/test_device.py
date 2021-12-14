@@ -3,7 +3,7 @@ Descripttion:
 version: 
 Author: Liuwen
 Date: 2021-12-01 10:53:32
-LastEditTime: 2021-12-07 14:50:03
+LastEditTime: 2021-12-14 15:34:05
 '''
 '''
 Descripttion: 
@@ -12,7 +12,6 @@ Author: Liuwen
 Date: 2021-11-29 10:07:57
 LastEditTime: 2021-12-01 14:51:22
 '''
-from _pytest.mark import param
 import pytest
 from common.Request import Request
 from common.Readyaml import get_yaml_file

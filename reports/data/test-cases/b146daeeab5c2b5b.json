@@ -1,0 +1,89 @@
+{
+  "uid" : "b146daeeab5c2b5b",
+  "name" : "test_find_allpower[caseinfo0]",
+  "fullName" : "interface_test.test_power.TestPower#test_find_allpower",
+  "historyId" : "7afe170c552124d80ac4871057f94db4",
+  "time" : {
+    "start" : 1639466572093,
+    "stop" : 1639466572125,
+    "duration" : 32
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1639466571923,
+      "stop" : 1639466572092,
+      "duration" : 169
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "69051d75705ad35e",
+      "name" : "log",
+      "source" : "69051d75705ad35e.txt",
+      "type" : "text/plain",
+      "size" : 14567
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "interface_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_power"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPower"
+  }, {
+    "name" : "host",
+    "value" : "XA342458"
+  }, {
+    "name" : "thread",
+    "value" : "22336-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "interface_test.test_power"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '查询所有电站', 'request': {'methond': 'get', 'url': 'http://10.0.10.131/interface/power/findPowerAll', 'data': 'None'}, 'validate': {'code': 0}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b146daeeab5c2b5b.json",
+  "parameterValues" : [ "{'name': '查询所有电站', 'request': {'methond': 'get', 'url': 'http://10.0.10.131/interface/power/findPowerAll', 'data': 'None'}, 'validate': {'code': 0}}" ]
+}

@@ -4,26 +4,17 @@
   "statistic" : {
     "failed" : 0,
     "broken" : 0,
-    "skipped" : 1,
-    "passed" : 12,
+    "skipped" : 0,
+    "passed" : 13,
     "unknown" : 0,
     "total" : 13
   },
   "time" : {
-<<<<<<< HEAD
-    "start" : 1638935301397,
-    "stop" : 1638935303885,
-    "duration" : 2488,
-    "minDuration" : 0,
-    "maxDuration" : 178,
-    "sumDuration" : 963
-=======
-    "start" : 1638868072091,
-    "stop" : 1638868074383,
-    "duration" : 2292,
-    "minDuration" : 0,
-    "maxDuration" : 170,
-    "sumDuration" : 874
->>>>>>> 6f0395ce3d9fc2cc1d1c8afc7a8c990bae1d2306
+    "start" : 1639466570093,
+    "stop" : 1639466572531,
+    "duration" : 2438,
+    "minDuration" : 26,
+    "maxDuration" : 169,
+    "sumDuration" : 870
   }
 }
