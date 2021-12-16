@@ -1,0 +1,89 @@
+{
+  "uid" : "ba19d49e5ab81ee9",
+  "name" : "删除命令",
+  "fullName" : "interface_test.test_command.TestCommand#test_del_command",
+  "historyId" : "1b1978fe17b188926ccf115569b2665e",
+  "time" : {
+    "start" : 1639624909635,
+    "stop" : 1639624909679,
+    "duration" : 44
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1639624909463,
+      "stop" : 1639624909634,
+      "duration" : 171
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "33637723211b6e33",
+      "name" : "log",
+      "source" : "33637723211b6e33.txt",
+      "type" : "text/plain",
+      "size" : 682
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "interface_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_command"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCommand"
+  }, {
+    "name" : "host",
+    "value" : "XA342458"
+  }, {
+    "name" : "thread",
+    "value" : "13472-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "interface_test.test_command"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '命令删除', 'request': {'methond': 'delete', 'url': 'http://10.0.10.131/interface/command/$id', 'data': 'None'}, 'validate': {'code': 0, 'msg': '删除命令成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ba19d49e5ab81ee9.json",
+  "parameterValues" : [ "{'name': '命令删除', 'request': {'methond': 'delete', 'url': 'http://10.0.10.131/interface/command/$id', 'data': 'None'}, 'validate': {'code': 0, 'msg': '删除命令成功'}}" ]
+}

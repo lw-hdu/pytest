@@ -1,0 +1,6 @@
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:231 Starting new HTTP connection (1): 10.0.10.131:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:461 http://10.0.10.131:80 "POST /login?username=admin&password=1qaz!QAZ HTTP/1.1" 200 None
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:461 http://10.0.10.131:80 "DELETE /interface/command/128?None HTTP/1.1" 200 None
+[32mINFO    [0m command:test_command.py:68 执行的测试用例名称：命令删除
+[32mINFO    [0m command:test_command.py:69 删除的命令id为：128
+[32mINFO    [0m command:test_command.py:70 删除命令响应：{'code': 0, 'msg': '删除命令成功', 'data': None}

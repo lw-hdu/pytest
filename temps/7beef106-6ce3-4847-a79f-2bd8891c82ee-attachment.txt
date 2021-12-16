@@ -1,0 +1,4 @@
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:231 Starting new HTTP connection (1): 10.0.10.131:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:461 http://10.0.10.131:80 "POST /login?username=admin&password=1qaz!QAZ HTTP/1.1" 200 None
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:461 http://10.0.10.131:80 "POST /interface/device HTTP/1.1" 200 None
+[32mINFO    [0m device:test_device.py:33 创建设备响应{'code': 0, 'msg': '添加设备成功', 'data': None}
