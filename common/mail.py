@@ -2,7 +2,7 @@
 Descripttion: 
 Author: Liuwen
 Date: 2021-12-16 10:15:55
-LastEditTime: 2021-12-16 11:21:23
+LastEditTime: 2021-12-17 13:31:45
 '''
 import smtplib
 import time
@@ -14,10 +14,10 @@ from email.header import Header
 
 class SendEmail:
     def __init__(self) -> None:
-        self.from_addr = 'lw_hdu@163.com'
-        self.password = 'ZXFOMKFKOXDDTGYJ'
+        self.from_addr = 'bipv001@longi.com'
+        self.password = 'Longi@123'
         self.to_addr = ['liuwen10@longi.com']
-        self.stmp_server = 'smtp.163.com'
+        self.stmp_server = 'mail.longi.com'
         self.curtime = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
         self.subject = '接口自动化测试结果通知'
 
@@ -30,6 +30,8 @@ class SendEmail:
         #开启发信服务
         server=smtplib.SMTP()
         server.connect(self.stmp_server,25)
+        # server = smtplib.SMTP_SSL(self.stmp_server,465)
+        
         try:
             #登录邮箱
             server.login(self.from_addr,self.password)
@@ -52,16 +54,22 @@ class SendEmail:
         
     def file_mail(self):
         #设置发送内容
-        content = f'您好，今天是{self.curtime}，\n接口自动化测试已完成，日志信息见附件'
+        content = f'您好，现在是{self.curtime}，\n接口自动化测试已完成，日志信息见附件'
         textApart = MIMEText(content,'plain','utf-8')
-
+        #日志文件附件
         logFile = r'F:\pytestdemo\test.log'
         logApart = MIMEApplication(open(logFile,'rb').read())
         logApart.add_header('Content-Disposition', 'attachment', filename=logFile)
+        #压缩文件附件
+        zipFile = r'F:\pytestdemo\allure-report.zip'
+        zipApart = MIMEApplication(open(zipFile, 'rb').read())
+        zipApart.add_header('Content-Disposition', 'attachment', filename=zipFile)
 
         m = MIMEMultipart()
         m.attach(textApart)
         m.attach(logApart)
+        m.attach(zipApart)
+
         #调用发送方法
         self.send(m)
 
@@ -69,6 +77,3 @@ class SendEmail:
 
 # sendemail = SendEmail()
 # sendemail.file_mail()
-
-
-

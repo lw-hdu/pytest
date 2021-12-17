@@ -1,0 +1,89 @@
+{
+  "uid" : "5914202cce4f694b",
+  "name" : "创建设备",
+  "fullName" : "interface_test.test_device.TestDevice#test_create_device",
+  "historyId" : "adab1c3552cbb4c84e77e77fb9521be3",
+  "time" : {
+    "start" : 1639710573920,
+    "stop" : 1639710573954,
+    "duration" : 34
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1639710573750,
+      "stop" : 1639710573919,
+      "duration" : 169
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7f2daa872ae29787",
+      "name" : "log",
+      "source" : "7f2daa872ae29787.txt",
+      "type" : "text/plain",
+      "size" : 505
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "interface_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_device"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDevice"
+  }, {
+    "name" : "host",
+    "value" : "XA342458"
+  }, {
+    "name" : "thread",
+    "value" : "5032-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "interface_test.test_device"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': 'MQTT采集设备添加', 'request': {'methond': 'post', 'url': 'http://10.0.10.131/interface/device', 'data': {'MPPTAccessRoadArray': [], 'PVAccessRoadArray': [], 'choseItem': '', 'choseItemArray': [], 'collect': '1', 'collectDeviceId': None, 'collectType': '', 'commands': [], 'deviceCode': '', 'deviceName': 'MQTT采集器test20211201', 'deviceType': 'collect', 'id': '', 'meterAddress': '', 'mpptType': '', 'parentId': None, 'powerId': '170', 'protocolType': 'MQTT', 'showStringInfoFlag': False, 'slave': '', 'strs': {}}}, 'validate': {'code': 0, 'msg': '添加设备成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5914202cce4f694b.json",
+  "parameterValues" : [ "{'name': 'MQTT采集设备添加', 'request': {'methond': 'post', 'url': 'http://10.0.10.131/interface/device', 'data': {'MPPTAccessRoadArray': [], 'PVAccessRoadArray': [], 'choseItem': '', 'choseItemArray': [], 'collect': '1', 'collectDeviceId': None, 'collectType': '', 'commands': [], 'deviceCode': '', 'deviceName': 'MQTT采集器test20211201', 'deviceType': 'collect', 'id': '', 'meterAddress': '', 'mpptType': '', 'parentId': None, 'powerId': '170', 'protocolType': 'MQTT', 'showStringInfoFlag': False, 'slave': '', 'strs': {}}}, 'validate': {'code': 0, 'msg': '添加设备成功'}}" ]
+}
