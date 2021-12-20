@@ -3,12 +3,13 @@ Descripttion:
 version: 
 Author: Liuwen
 Date: 2021-12-01 10:53:32
-LastEditTime: 2021-12-16 08:36:43
+LastEditTime: 2021-12-20 16:03:41
 '''
 
 import pytest
 from common.Request import Request
 from common.Readyaml import get_yaml_file
+from common.DB import sel_db
 import allure
 import logging
 import json

@@ -2,7 +2,7 @@
 Descripttion: 
 Author: Liuwen
 Date: 2021-12-16 10:15:55
-LastEditTime: 2021-12-17 13:31:45
+LastEditTime: 2021-12-17 16:44:17
 '''
 import smtplib
 import time
@@ -72,7 +72,6 @@ class SendEmail:
 
         #调用发送方法
         self.send(m)
-
 
 
 # sendemail = SendEmail()

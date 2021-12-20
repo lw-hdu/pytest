@@ -1,6 +1,0 @@
-[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:231 Starting new HTTP connection (1): 10.0.10.131:80
-[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:461 http://10.0.10.131:80 "POST /login?username=admin&password=1qaz!QAZ HTTP/1.1" 200 None
-[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:461 http://10.0.10.131:80 "DELETE /interface/device/999999?None HTTP/1.1" 200 None
-[32mINFO    [0m device:test_device.py:69 执行的测试用例名称：删除设备不存在
-[32mINFO    [0m device:test_device.py:70 删除请求url:http://10.0.10.131/interface/device/999999
-[32mINFO    [0m device:test_device.py:71 删除设备响应：{'code': 1401, 'msg': '查询不到改设备', 'data': None}

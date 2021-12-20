@@ -3,7 +3,7 @@ Descripttion:
 version: 
 Author: Liuwen
 Date: 2021-11-24 11:12:05
-LastEditTime: 2021-12-06 11:52:41
+LastEditTime: 2021-12-20 09:22:50
 '''
 import pytest
 import requests
@@ -32,7 +32,6 @@ def exe_read(request):
 @pytest.fixture(scope="function",autouse=False)
 def get_token():
     url = 'http://10.0.10.131/login?username=admin&password=1qaz!QAZ'
-    method = 'post'
     data = {'name':'admin',
             'password':'1qaz!QAZ'
             }

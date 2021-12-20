@@ -3,7 +3,7 @@ Descripttion:
 version: 
 Author: Liuwen
 Date: 2021-11-29 10:07:57
-LastEditTime: 2021-12-14 15:29:23
+LastEditTime: 2021-12-20 16:17:25
 '''
 
 import pytest
@@ -29,7 +29,6 @@ class TestPower:
         url=caseinfo['request']['url']
         data=caseinfo['request']['data']
         res=Request.session.request(method=methond,url=url,params=data,headers=header)
-        # print(res.json())
         TestPower.power_id = res.json()['data'][-1]['id']
         assert caseinfo['validate']['code'] == res.json()['code']
         TestPower.log.info(f'执行的测试用例名称：{name}')
@@ -43,8 +42,7 @@ class TestPower:
             }
         #将id的值传入yaml的$id字段，并通过json.loads()将str转换为dict
         # 使用safe_substitute即使key不存在，也不会报错，原样输出
-        case = json.loads(temp.safe_substitute(d))
-        
+        case = json.loads(temp.safe_substitute(d))  
         name=case['name']
         header={'Authorization':get_token}
         methond=case['request']['methond']

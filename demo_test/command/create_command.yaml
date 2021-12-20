@@ -4,7 +4,7 @@
   methond: post
   url: http://10.0.10.131/interface/command
   data: 
-   commandName: "test"
+   commandName: $commandName
    commandType: 3
    handleId: 2
    id: ""
