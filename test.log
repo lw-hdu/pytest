@@ -1,6 +1,6 @@
-17:02:03 - connectionpool.py - connectionpool - _new_conn - 231 - DEBUG - Starting new HTTP connection (1): 10.0.10.131:80
-17:02:03 - connectionpool.py - connectionpool - _make_request - 461 - DEBUG - http://10.0.10.131:80 "POST /login?username=admin&password=1qaz!QAZ HTTP/1.1" 200 None
-17:02:03 - test_request.py - test_request - test_request - 53 - INFO - 这是第3个文件
-17:02:03 - test_request.py - test_request - test_request - 54 - INFO - 执行的测试用例名称：分页查询命令
-17:02:03 - connectionpool.py - connectionpool - _new_conn - 231 - DEBUG - Starting new HTTP connection (1): 10.0.10.131:80
-17:02:03 - connectionpool.py - connectionpool - _make_request - 461 - DEBUG - http://10.0.10.131:80 "GET /interface/command/findCommandPage/1/10?None HTTP/1.1" 200 None
+17:18:55 - connectionpool.py - connectionpool - _new_conn - 231 - DEBUG - Starting new HTTP connection (1): 10.0.10.131:80
+17:18:55 - connectionpool.py - connectionpool - _make_request - 461 - DEBUG - http://10.0.10.131:80 "POST /login?username=admin&password=1qaz!QAZ HTTP/1.1" 200 None
+17:18:55 - connectionpool.py - connectionpool - _new_conn - 231 - DEBUG - Starting new HTTP connection (1): 10.0.10.131:80
+17:18:55 - connectionpool.py - connectionpool - _make_request - 461 - DEBUG - http://10.0.10.131:80 "POST /interface/command HTTP/1.1" 200 None
+17:18:55 - test_command.py - test_command - test_create_command - 43 - INFO - 执行的测试用例名称：命令添加
+17:18:55 - test_command.py - test_command - test_create_command - 44 - INFO - 创建命令响应：{'code': 0, 'msg': '添加命令成功', 'data': None}

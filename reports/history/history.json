@@ -1,5 +1,5 @@
 {
-  "00b18917c188658c96f71da500f81fa9" : {
+  "90fe2ba4ef249b2c51ba0910b2bc7e5e" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -9,12 +9,52 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c6ee4ed81c59f730",
+      "uid" : "cddeee1f490c8cce",
       "status" : "passed",
       "time" : {
-        "start" : 1639990923276,
-        "stop" : 1639990923355,
-        "duration" : 79
+        "start" : 1645607935881,
+        "stop" : 1645607935925,
+        "duration" : 44
+      }
+    } ]
+  },
+  "1b1978fe17b188926ccf115569b2665e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b707edbfc264268",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1645607935931,
+        "stop" : 1645607935931,
+        "duration" : 0
+      }
+    } ]
+  },
+  "fd32f7776600306094298f3eed05f470" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "29d899ee2f838687",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: unconditional skip",
+      "time" : {
+        "start" : 1645607935929,
+        "stop" : 1645607935929,
+        "duration" : 0
       }
     } ]
   }

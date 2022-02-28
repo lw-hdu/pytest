@@ -1,2 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Dec 20 17:02:03 CST 2021","Mon Dec 20 17:02:03 CST 2021","79","test_class","test_request","","","","test_request[caseinfo0]",""
+"passed","Wed Feb 23 17:18:55 CST 2022","Wed Feb 23 17:18:55 CST 2022","44","interface_test","test_command","TestCommand","","","创建命令",""
+"skipped","Wed Feb 23 17:18:55 CST 2022","Wed Feb 23 17:18:55 CST 2022","0","interface_test","test_command","TestCommand","","","查询命令",""
+"skipped","Wed Feb 23 17:18:55 CST 2022","Wed Feb 23 17:18:55 CST 2022","0","interface_test","test_command","TestCommand","","","删除命令",""

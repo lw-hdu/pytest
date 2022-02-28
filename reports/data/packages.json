@@ -2,20 +2,44 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "test_class.test_request",
+    "name" : "interface_test.test_command",
     "children" : [ {
-      "name" : "test_request[caseinfo0]",
-      "uid" : "c6ee4ed81c59f730",
-      "parentUid" : "06db74f4cc6bbdebec6e2c8bdb990c9d",
+      "name" : "创建命令",
+      "uid" : "cddeee1f490c8cce",
+      "parentUid" : "7d008597839673f5aa2e172bc3c58cc0",
       "status" : "passed",
       "time" : {
-        "start" : 1639990923276,
-        "stop" : 1639990923355,
-        "duration" : 79
+        "start" : 1645607935881,
+        "stop" : 1645607935925,
+        "duration" : 44
+      },
+      "flaky" : false,
+      "parameters" : [ "{'name': '命令添加', 'request': {'methond': 'post', 'url': 'http://10.0.10.131/interface/command', 'data': {'commandName': '$commandName', 'commandType': 3, 'handleId': 2, 'id': '', 'readData': '[{\"name\":\"temp\",\"type\":\"short\"}]', 'send': 'address=11,quantity=4'}}, 'validate': {'code': 0, 'msg': '添加命令成功'}}" ]
+    }, {
+      "name" : "查询命令",
+      "uid" : "29d899ee2f838687",
+      "parentUid" : "7d008597839673f5aa2e172bc3c58cc0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1645607935929,
+        "stop" : 1645607935929,
+        "duration" : 0
       },
       "flaky" : false,
       "parameters" : [ "{'name': '分页查询命令', 'request': {'methond': 'get', 'url': 'http://10.0.10.131/interface/command/findCommandPage/1/10', 'data': 'None'}, 'validate': {'code': 0, 'msg': '分页查询成功'}}" ]
+    }, {
+      "name" : "删除命令",
+      "uid" : "b707edbfc264268",
+      "parentUid" : "7d008597839673f5aa2e172bc3c58cc0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1645607935931,
+        "stop" : 1645607935931,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "parameters" : [ "{'name': '命令删除', 'request': {'methond': 'delete', 'url': 'http://10.0.10.131/interface/command/$id', 'data': 'None'}, 'validate': {'code': 0, 'msg': '删除命令成功'}}" ]
     } ],
-    "uid" : "test_class.test_request"
+    "uid" : "interface_test.test_command"
   } ]
 }

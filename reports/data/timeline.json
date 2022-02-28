@@ -4,21 +4,45 @@
   "children" : [ {
     "name" : "XA342458",
     "children" : [ {
-      "name" : "14916-MainThread",
+      "name" : "12844-MainThread",
       "children" : [ {
-        "name" : "test_request[caseinfo0]",
-        "uid" : "c6ee4ed81c59f730",
-        "parentUid" : "d3d8925e1494e11aa326a021944b1d04",
+        "name" : "创建命令",
+        "uid" : "cddeee1f490c8cce",
+        "parentUid" : "5842a477bbc5a3917950f2b40d0877eb",
         "status" : "passed",
         "time" : {
-          "start" : 1639990923276,
-          "stop" : 1639990923355,
-          "duration" : 79
+          "start" : 1645607935881,
+          "stop" : 1645607935925,
+          "duration" : 44
+        },
+        "flaky" : false,
+        "parameters" : [ "{'name': '命令添加', 'request': {'methond': 'post', 'url': 'http://10.0.10.131/interface/command', 'data': {'commandName': '$commandName', 'commandType': 3, 'handleId': 2, 'id': '', 'readData': '[{\"name\":\"temp\",\"type\":\"short\"}]', 'send': 'address=11,quantity=4'}}, 'validate': {'code': 0, 'msg': '添加命令成功'}}" ]
+      }, {
+        "name" : "查询命令",
+        "uid" : "29d899ee2f838687",
+        "parentUid" : "5842a477bbc5a3917950f2b40d0877eb",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1645607935929,
+          "stop" : 1645607935929,
+          "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ "{'name': '分页查询命令', 'request': {'methond': 'get', 'url': 'http://10.0.10.131/interface/command/findCommandPage/1/10', 'data': 'None'}, 'validate': {'code': 0, 'msg': '分页查询成功'}}" ]
+      }, {
+        "name" : "删除命令",
+        "uid" : "b707edbfc264268",
+        "parentUid" : "5842a477bbc5a3917950f2b40d0877eb",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1645607935931,
+          "stop" : 1645607935931,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ "{'name': '命令删除', 'request': {'methond': 'delete', 'url': 'http://10.0.10.131/interface/command/$id', 'data': 'None'}, 'validate': {'code': 0, 'msg': '删除命令成功'}}" ]
       } ],
-      "uid" : "d3d8925e1494e11aa326a021944b1d04"
+      "uid" : "5842a477bbc5a3917950f2b40d0877eb"
     } ],
     "uid" : "b5e5b6ef3b2734664bd21635ea8e8a75"
   } ]

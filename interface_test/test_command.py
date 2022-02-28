@@ -3,7 +3,7 @@ Descripttion:
 version: 
 Author: Liuwen
 Date: 2021-12-01 10:53:32
-LastEditTime: 2021-12-20 15:56:38
+LastEditTime: 2022-01-10 09:48:36
 '''
 import json
 import pytest
@@ -27,24 +27,24 @@ class TestCommand:
         d = {
             'commandName':'command_' + str(int(time.time()))
             }
-        case = json.loads(temp.safe_substitute(d))
+        case = json.loads(temp.safe_substitute(d)) 
         name=case['name']
         header={'Authorization':get_token}
         methond=case['request']['methond']
         url=case['request']['url']
         data=case['request']['data']
         res=Request.session.request(method=methond,url=url,json=data,headers=header)
-        cname = case['request']['data']['commandName']
-        sql = "SELECT * FROM mon_conf_command WHERE command_name = '{}'".format(cname)
-        result = sel_db(sql)
+        # cname = case['request']['data']['commandName']
+        # sql = "SELECT * FROM mon_conf_command WHERE command_name = '{}'".format(cname)
+        # result = sel_db(sql)
         assert case['validate']['code'] == res.json()['code']
         assert case['validate']['msg'] == res.json()['msg']
-        assert result != ()
+        # assert result != ()
         TestCommand.log.info(f'执行的测试用例名称：{name}')
         TestCommand.log.info(f'创建命令响应：{res.json()}')
-        TestCommand.log.info(f'命令创建完成后数据库查询结果:\n{result}')
+        # TestCommand.log.info(f'命令创建完成后数据库查询结果:\n{result}')
 
-    
+    @pytest.mark.skip()
     @allure.title('查询命令')
     @pytest.mark.parametrize('caseinfo',get_yaml_file('demo_test\\command\\find_commandpage.yaml'))
     def test_find_command(self,caseinfo,get_token):
@@ -60,7 +60,7 @@ class TestCommand:
         TestCommand.log.info(f'执行的测试用例名称：{name}')
         TestCommand.log.info(f'查询命令响应结果:{res.json()}')
 
-    
+    @pytest.mark.skip()
     @allure.title('删除命令')
     @pytest.mark.parametrize('caseinfo',get_yaml_file('demo_test\\command\\delete_command.yaml'))
     def test_del_command(self,caseinfo,get_token):

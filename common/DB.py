@@ -2,11 +2,10 @@
 Descripttion: 
 Author: Liuwen
 Date: 2021-12-20 13:59:25
-LastEditTime: 2021-12-20 15:57:42
+LastEditTime: 2021-12-27 09:43:47
 '''
 
 import pymysql
-
 
 def sel_db(sql):
     #连接mysql数据库
@@ -17,7 +16,6 @@ def sel_db(sql):
     cursor.execute(sql)
     #查询所有记录
     results = cursor.fetchall()
-    # results = cursor.fetchone()
     #关闭数据库连接
     conn.close()
     cursor.close()
